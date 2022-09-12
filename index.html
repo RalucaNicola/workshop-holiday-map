@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+  <title>My holiday map - Eurocarto 2022</title>
+
+  <link rel="stylesheet" href="/src/general.scss" />
+</head>
+
+<body>
+  <article>
+    <!-- intro part -->
+    <div class="full-cover-container">
+      <heading>
+        <h1>Raluca's Californian Adventure <img src="./assets/palmtree.png"></h1>
+        <p>I spent July 2022 in California, working in Redlands and travelling from San Diego to San Francisco. This
+          story map shows the highlights of my journey.</p>
+      </heading>
+      <img src="./assets/holiday-intro-mobile.png" class="mobile">
+      <img src="./assets/holiday-intro-desktop.png" class="desktop">
+    </div>
+
+    <div class="content-panel">
+      <!-- UC - San Diego -->
+      <section id="section-0">
+        <h2>San Diego</h2>
+        <p>After working in Redlands for 2 weeks, I got to spend a week in San Diego helping out at Esri's User
+          Conference. I didn't get to do much visiting, but I really enjoyed
+          hanging out at the Coronado Island in my free time. In front of the conference center you can take a boat to
+          the island and if you're lucky you can catch a nice sunset, a beautiful concert and spectacular views
+          of downtown San Diego.</p>
+        <div class="media">
+          <video controls>
+            <source src="./assets/san-diego.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="annotation">
+          <span>Boat ride from Coronado Island to the conference center with a concert at the Rady Shell.</span><img
+            src="./assets/music.png">
+        </div>
+        <div class="media">
+          <img src="./assets/san-diego.jpg">
+        </div>
+        <div class="annotation">
+          <img src="./assets/sun.png"><span>View of San Diego from the Coronado island with a beautiful sunset.</span>
+        </div>
+      </section>
+
+      <div class="separator"></div>
+
+      <!-- Train trip from San Diego to Los Angeles -->
+      <section id="section-1">
+        <h2>Train trip from San Diego to Los Angeles</h2>
+        <p>After one week in San Diego I travelled to Los Angeles to meet my friend Josefin and start our little road
+          trip. I had some issues with my credit card so I couldn't rent a car. So I did the next best thing, I took the
+          Pacific Surfliner. And it was an amazing experience, I couldn't believe how close we were to the beach. And
+          trains in the US are luxury, you have so much space for legs and luggage.</p>
+        <div class="media">
+          <img src="./assets/train-station-sandiego.jpg" class="left-image">
+          <img src="./assets/train-ride.jpg" class="right-image">
+        </div>
+        <div class="annotation">
+          <span>Awesome ocean views on the train from San Diego to Los Angeles. </span><img
+            src="./assets/on-the-train-stick.png" style="max-height:100px;">
+        </div>
+      </section>
+
+      <div class="separator"></div>
+
+      <!-- Los Angeles -->
+      <section id="section-2">
+        <h2>Los Angeles</h2>
+        <p>While in Los Angeles, we tried our best to do the touristy things tourists do. We were walking the Walk of
+          Fame, went fancy on Rodeo Drive, did a little walking up to Griffith Observatory, played beach volleyball at
+          Santa Monica beach, rode our bikes to Venice Beach and we even went for a Frank Sinatra tribute
+          concert at the Hollywood Bowl (and missed the first part of the concert because we got stuck in traffic and
+          couldn't find
+          parking hehe).</p>
+        <div class="media">
+          <img src="./assets/los-angeles.jpg" class="left-image">
+          <img src="./assets/hollywood.jpg" class="right-image">
+        </div>
+        <div class="annotation">
+          <span>Hollywood boulevard and the Hollywood sign. </span>
+        </div>
+        <div class="media">
+          <img src="./assets/hollywood-bowl.jpg">
+        </div>
+        <div class="annotation">
+          <span>Frank Sinatra and Peggy Lee tribute concert at the Hollywood Bowl.</span>
+        </div>
+      </section>
+
+      <div id="viewDiv" class="map-panel"></div>
+    </div>
+
+    <!-- closing part -->
+    <div class="full-cover-container">
+      <heading>
+        <img src="./assets/palmtree.png">
+        <p class="handwritten">And... that's all folks!</p>
+      </heading>
+    </div>
+  </article>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>

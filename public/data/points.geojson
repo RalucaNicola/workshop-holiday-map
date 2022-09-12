@@ -1,0 +1,60 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "User Conference",
+        "id": "section-0"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-117.16253757476805, 32.70692784072598]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Coronado Island",
+        "id": "section-0"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-117.17227935791016, 32.69862194228112]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hollywood Bowl",
+        "id": "section-2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-118.33919048309325, 34.112266464282456]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Griffith Observatory",
+        "id": "section-2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-118.30036282539369, 34.11830213572757]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Walk of Fame",
+        "id": "section-2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-118.34133625030519, 34.10149978240744]
+      }
+    }
+  ]
+}

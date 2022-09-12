@@ -1,0 +1,157 @@
+@import "@arcgis/core/assets/esri/themes/light/main.css";
+@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  font-family: "Avenir Next", sans-serif;
+  color: #271b0f;
+}
+
+#viewDiv {
+  // pointer-events: none;
+}
+
+.full-cover-container {
+  height: 100vh;
+  text-align: center;
+  // background: url(../assets/griffith-observatory.jpg) no-repeat center center fixed;
+  // -webkit-background-size: cover;
+  // -moz-background-size: cover;
+  // -o-background-size: cover;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.full-cover-container heading {
+  width: min(800px, 80%);
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 20px;
+}
+
+h1 > img {
+  max-height: 100px;
+  vertical-align: middle;
+}
+
+.full-cover-container > img {
+  max-width: 80%;
+  max-height: none;
+}
+
+.full-cover-container h1 {
+  font-size: 3rem;
+  font-family: "Caveat", cursive;
+}
+
+.map-panel {
+  height: 30vh;
+  padding-top: 10px;
+  background-color: white;
+  position: sticky;
+  bottom: 0;
+  z-index: 10;
+}
+
+video,
+img {
+  max-width: 100%;
+  max-height: 400px;
+}
+
+.media {
+  padding: 20px max(20px, 10%) 10px;
+  text-align: center;
+}
+
+#section-1 .left-image {
+  max-width: 30%;
+}
+
+#section-1 .right-image {
+  max-width: 60%;
+}
+
+.annotation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Caveat", cursive;
+  font-size: larger;
+}
+
+.annotation > img {
+  max-height: 60px;
+}
+
+.handwritten {
+  font-family: "Caveat", cursive;
+  font-size: xx-large;
+}
+
+section {
+  padding: 0 40px;
+  margin: 20px auto;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  padding: 20px;
+  text-align: center;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.65;
+}
+
+section h2,
+section h3,
+section p,
+section .annotation {
+  width: min(800px, 80%);
+  margin: 0 auto 20px;
+}
+
+.separator {
+  width: min(400px, 50%);
+  margin: 100px auto 0;
+  height: 40px;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.mobile {
+  display: none;
+}
+.desktop {
+  display: inherit;
+}
+
+@media (max-width: 700px) {
+  #section-1 .left-image,
+  #section-1 .right-image {
+    max-width: 100%;
+  }
+  .full-cover-container h1 {
+    font-size: 1.9rem;
+  }
+  h1 > img {
+    max-height: 50px;
+  }
+  .mobile {
+    display: revert;
+  }
+  .desktop {
+    display: none;
+  }
+}
