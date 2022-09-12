@@ -6,7 +6,7 @@
 - [VSCode](https://code.visualstudio.com/)
 - git - [Installation](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) (optional, only if you want to publish your project on the web later on)
 
-## Set up project locally
+## The one where we set up the project locally 🏠
 
 In the command line (tip - I use [Hyper](https://hyper.is/) and I love it):
 
@@ -33,7 +33,7 @@ npm run dev
 
 Then open your browser at http://localhost:3000/
 
-## Discover the structure of the project
+## The one where we discover the structure of the story 🕵️
 
 Take a look at the structure of [index.html](./index.html). The story map has:
 
@@ -42,7 +42,9 @@ Take a look at the structure of [index.html](./index.html). The story map has:
 - at the end of the content there is a map panel. This has a fixed location at the bottom of the screen and scrolling through text is synchronized with what is being shown in the map.
 - the closing page of the story (text and image)
 
-## Set up the map
+At this part start drafting the structure of your story and replace the content in my template. Add a title, add content for the different sections and what you want to display on the map.
+
+## The one where we set up the map 🗺️
 
 To create the map you'll need a free [ArcGIS Developer account](https://developers.arcgis.com/sign-up). Once you created it and confirmed your email address, you can use it to create a web map:
 
@@ -58,9 +60,9 @@ To create the map you'll need a free [ArcGIS Developer account](https://develope
 
 Note: It's out of the scope of this workshop, but if you'd like to create a custom vector tile basemap, you can do it with the [Vector Tile Style Editor](https://developers.arcgis.com/vector-tile-style-editor/).
 
-## Set up bookmarks
+## The one where we set up the bookmarks 📖
 
-For a certain section of the storymap, you'll want to zoom to a location. We can achieve this by using bookmarks. In [ArcGIS Map Viewer](https://www.arcgis.com/apps/mapviewer/index.html) open the map you previously created and:
+For a certain section of the storymap, you'll want to zoom to a location. We can store these locations by using bookmarks. In [ArcGIS Map Viewer](https://www.arcgis.com/apps/mapviewer/index.html) open the map you previously created and:
 
 1. Go to Bookmarks.
 1. Zoom and scroll on the map to go to the viewpoint you want to have in your section. Click to Add a new bookmark.
@@ -69,17 +71,22 @@ For a certain section of the storymap, you'll want to zoom to a location. We can
 
 ![Steps to create a web map](./public/assets/steps-to-create-bookmarks.png)
 
-## Synchronizing the map and the text - how does it work
+## Synchronizing the map and the text - how does it work ❓
 
 When the application loads, when the user scrolls or when the window is resized we calculate which section is currently visible. The id of the current visible section is used to either animate a path from [tracks.geojson](./public/data/tracks.geojson) (with the same id), to go to a map viewpoint or to filter the points in [points.geojson](./public/data/points.geojson).
 
-## Create the data
+## The one where we create the data 💾
 
 I used [geojson.io](https://geojson.io/) to create the [point and line data](./public/data/) for this project. I animated the line data based on the scroll progress of a certain section and I filter the points based on the section they're supposed to be displayed in.
 
 For example, the point that should be displayed in `"section-0"` will have a property `id` with the key `section-0`. The same for the tracks that will be animated. A polyline that should be animated in `"section-1"` will have a property `id` witht the key `section-1`. Have a look at the [data](./public/data/).
 
-## Publish project to GitHub (optional)
+## The one where we spend some more time polishing the project 💅
+
+Maybe you want to rephrase that sentence? or change the style of the basemap? or swap this image for another one where you look much better 😉
+This is where we do all these final changes.
+
+## The one where we go public - deploying project to [GitHub Pages](https://pages.github.com/) (optional) 🌐
 
 Once you are happy with your map you can create a production build and deploy it to [GitHub Pages](https://pages.github.com/).
 
@@ -90,8 +97,6 @@ npm run build
 The `dist` folder then contains all the files for the web app which can either be copied to a web server or pushed to the `gh-pages` branch to be served at `https://arnofiva.github.io/arcgis-core-template`.
 
 In order to use the `gh-pages` approach, see the following instructions. Make sure you remove an existing `dist` folder if it has been created from a previous build.
-
-## Deploy to [GitHub Pages](https://pages.github.com/)
 
 ### Create `gh-pages` branch
 
