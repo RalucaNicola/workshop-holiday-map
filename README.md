@@ -10,15 +10,15 @@
 
 In the command line (tip - I use [Hyper](https://hyper.is/) and I love it):
 
-If you want to use `git` then you can go to the [Github project](https://github.com/RalucaNicola/workshop-holiday-map) and fork the project. Then you can clone your own project:
+If you want to use `git` then you can go to the [Github project](https://github.com/RalucaNicola/workshop-holiday-map) and fork the project. Then you can clone your own repository:
 
 ```
 git clone git@github.com:yourGithubUsername/workshop-holiday-map.git
 ```
 
-If you didn't install `git` then you can download the repository on the [github website](https://github.com/RalucaNicola/workshop-holiday-map). [Here is a description](https://sites.northwestern.edu/researchcomputing/resources/downloading-from-github/) of how to do that. Unzip the folder.
+If you don't want to use `git` then you can download the repository on the [github website](https://github.com/RalucaNicola/workshop-holiday-map). [Here is a description](https://sites.northwestern.edu/researchcomputing/resources/downloading-from-github/) of how to do that. Unzip the folder.
 
-Go to the newly created folder and install dependency libraries:
+Go to the newly created folder and install the dependency libraries:
 
 ```
 cd workshop-holiday-map
