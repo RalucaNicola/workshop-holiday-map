@@ -100,12 +100,10 @@ In order to use the `gh-pages` approach, see the following instructions. Make su
 
 ### Create `gh-pages` branch
 
-You can skip this part if you used the template by copying all branches, which includs the `gh-pages` branch that is part of this project.
-
-If you only copied the `main` branch, follow these steps to create an orphan `gh-pages` branch (meaning it does not share any history with `main`):
+Follow these steps to create an orphan `gh-pages` branch (meaning it does not share any history with `main`):
 
 ```
-rm -rf dist
+mac: rm -rf dist // windows: rmdir dist
 git checkout --orphan gh-pages
 git rm -rf .
 git commit --allow-empty -m "Init empty branch"
