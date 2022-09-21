@@ -131,8 +131,12 @@ Once the previous steps have been completed, you can repeat the following every 
 ```
 npm run build
 cd dist/
+mac: touch .nojekyll // windows: echo.> .nojekyll
 git add .
-git commit -am '🎉'
+git commit -am 'Deploy'
 git push origin gh-pages
 cd ../
 ```
+
+Note: we need to add the .nojekyll file in the dist folder because Jekyll doesn't copy files that start with underscore to the final site and like this we bypass it.
+[See more explanation here](https://github.blog/2009-12-29-bypassing-jekyll-on-github-pages/).
