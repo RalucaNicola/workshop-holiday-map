@@ -7,6 +7,10 @@ import {SimpleLineSymbol, SimpleMarkerSymbol, TextSymbol} from "@arcgis/core/sym
 import MapView from "@arcgis/core/views/MapView";
 import WebMap from "@arcgis/core/WebMap";
 import LineLayerAnimation from "./lib/LineLayerAnimation";
+import esriConfig from "@arcgis/core/config";
+
+// needed to access the webmap
+esriConfig.apiKey = "add your api key here";
 
 const map = new WebMap({
   portalItem: {

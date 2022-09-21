@@ -46,7 +46,13 @@ At this part start drafting the structure of your story and replace the content 
 
 ## The one where we set up the map 🗺️
 
-To create the map you'll need a free [ArcGIS Developer account](https://developers.arcgis.com/sign-up). Once you created it and confirmed your email address, you can use it to create a web map:
+To create the map you'll need a free [ArcGIS Developer account](https://developers.arcgis.com/sign-up). Once you created it and confirmed your email address go to the main page and click "Upgrade to developer account". If you go to API keys you should see a default key:
+
+![api key](./public/assets/api-key.png)
+
+Copy the Default API Key and paste it in the `esriConfig.apiKey`: [see on Github](https://github.com/RalucaNicola/workshop-holiday-map/blob/main/src/main.ts#L13).
+
+Now you can create a web map:
 
 1. Go to the [ArcGIS Map Viewer](https://www.arcgis.com/apps/mapviewer/index.html) and login with the account you created.
 1. Activate the "Basemap" selection tool.
