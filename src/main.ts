@@ -10,7 +10,7 @@ import LineLayerAnimation from "./lib/LineLayerAnimation";
 import esriConfig from "@arcgis/core/config";
 
 // needed to access the webmap
-esriConfig.apiKey = "add your api key here";
+esriConfig.apiKey = "AAPKd2c9128130334dfd8a91779f555ac729TsXtKUoXAQR3qTlSGaaiRem3SYpUdur0Ph6kQzp_DCheaZM8ZwtjJYOhJDnriX5g";
 
 const map = new WebMap({
   portalItem: {
